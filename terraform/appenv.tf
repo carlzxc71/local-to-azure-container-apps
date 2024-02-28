@@ -25,16 +25,12 @@ resource "azapi_resource" "app" {
         containers = [
           {
             name  = "${var.container_app_job_name}",
-            image = "docker.io/altinlab/xenitqr:azqr0.52.0"
+            image = "${var.docker_image}"
             resources = {
               cpu    = 0.25
               memory = "0.5Gi"
             }
             env = [
-              {
-                "name" : "STORAGE_ACCOUNT",
-                "value" : "${var.st_account_name}"
-              },
               {
                 "name" : "APPSETTING_WEBSITE_SITE_NAME", ## Required environment variable as MI fails to contact the correct endpoint without it
                 "value" : "DUMMY"

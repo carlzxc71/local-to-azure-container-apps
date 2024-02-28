@@ -19,18 +19,13 @@ variable "rg_name" {
   type        = string
 }
 
-variable "st_account_name" {
-  description = "The name of the storage account"
-  type        = string
-}
-
-variable "st_container_name" {
-  description = "The name of the container in the storage account"
-  type        = string
-}
-
 variable "log_workspace_name" {
   description = "The name of the log analytics workspace"
+  type        = string
+}
+
+variable "docker_image" {
+  description = "The path to the docker image hosted on docker hub"
   type        = string
 }
 
