@@ -20,5 +20,5 @@ They should make their changes and then re-apply the lock. However we have notic
 az lock create --name rgLock --resource-group rg-alz-monitor --lock-type ReadOnly
 ```
 
-Want to read further? Head to URL here
+Want to read further? [Head to URL here](https://www.lindbergtech.com/developing-a-container-locally-deploy-to-azure-with-iac-and-run-it-inside-azure-container-app-jobs/)https://www.lindbergtech.com/developing-a-container-locally-deploy-to-azure-with-iac-and-run-it-inside-azure-container-app-jobs/
 
